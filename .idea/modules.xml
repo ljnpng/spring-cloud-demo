@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/api-common/api-common.iml" filepath="$PROJECT_DIR$/api-common/api-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consul-order-consumer/consul-order-consumer.iml" filepath="$PROJECT_DIR$/consul-order-consumer/consul-order-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consul-payment-provider/consul-payment-provider.iml" filepath="$PROJECT_DIR$/consul-payment-provider/consul-payment-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hystrix-order-consumer-feign/hystrix-order-consumer-feign.iml" filepath="$PROJECT_DIR$/hystrix-order-consumer-feign/hystrix-order-consumer-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hystrix-payment-provider/hystrix-payment-provider.iml" filepath="$PROJECT_DIR$/hystrix-payment-provider/hystrix-payment-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-comsume/order-comsume.iml" filepath="$PROJECT_DIR$/order-comsume/order-comsume.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-consumer-feign/order-consumer-feign.iml" filepath="$PROJECT_DIR$/order-consumer-feign/order-consumer-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/payment-provider/payment-provider.iml" filepath="$PROJECT_DIR$/payment-provider/payment-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-demo.iml" filepath="$PROJECT_DIR$/spring-cloud-demo.iml" />
+    </modules>
+  </component>
+</project>

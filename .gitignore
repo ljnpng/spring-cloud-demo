@@ -1,0 +1,8 @@
+# Project exclude paths
+/api-common/target/
+/consul-order-consumer/target/
+/consul-payment-provider/target/
+/eureka-server/target/
+/hystrix-order-consumer-feign/target/
+/hystrix-payment-provider/target/
+/order-consumer-feign/target/
