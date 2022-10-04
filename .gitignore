@@ -6,3 +6,5 @@
 /hystrix-order-consumer-feign/target/
 /hystrix-payment-provider/target/
 /order-consumer-feign/target/
+!/.idea/
+/*/*.iml
