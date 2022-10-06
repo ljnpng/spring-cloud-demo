@@ -17,16 +17,16 @@
 
     <modules>
         <module>api-common</module>
-        <module>zk/zk-payment-provider</module>
-        <module>zk/zk-order-consumer</module>
-        <!--        <module>eureka/order-comsume</module>-->
-<!--        <module>eureka/payment-provider</module>-->
-<!--        <module>eureka/eureka-server</module>-->
-<!--        <module>consul-order-consumer</module>-->
-<!--        <module>consul-payment-provider</module>-->
-<!--        <module>order-consumer-feign</module>-->
-<!--        <module>hystrix-payment-provider</module>-->
-<!--        <module>hystrix-order-consumer-feign</module>-->
+        <!--        <module>zk/zk-payment-provider</module>-->
+        <!--        <module>zk/zk-order-consumer</module>-->
+        <module>eureka/order-comsume</module>
+        <module>eureka/payment-provider</module>
+        <module>eureka/eureka-server</module>
+        <!--        <module>consul-order-consumer</module>-->
+        <!--        <module>consul-payment-provider</module>-->
+        <!--        <module>order-consumer-feign</module>-->
+        <!--        <module>hystrix-payment-provider</module>-->
+        <!--        <module>hystrix-order-consumer-feign</module>-->
     </modules>
 
     <properties>
