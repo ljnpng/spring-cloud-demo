@@ -1,0 +1,4 @@
+FROM openjdk:8
+COPY target/consul-payment-provider-0.0.1-SNAPSHOT.jar /app/payment.jar
+EXPOSE 8006
+CMD ["java", "-jar", "/app/payment.jar"]
