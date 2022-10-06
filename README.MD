@@ -13,6 +13,8 @@
 - idea中也可以通过复制configuration 并通过参数覆盖application.yaml 中定义好的端口.  
 如果没有输入框需要提前在 Modify Options 中把 Program arguments 勾选上  
   ![img.png](asset/img.png)
+- idea 另一种 `Override Configuration Properties` 同样也可以覆盖 application.yaml 中配置的参数
+  ![img.png](asset/img1.png)
 
 ## zookeeper
 [zookeeper-readme](zk/readme.md)
