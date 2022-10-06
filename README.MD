@@ -13,3 +13,6 @@
 - idea中也可以通过复制configuration 并通过参数覆盖application.yaml 中定义好的端口.  
 如果没有输入框需要提前在 Modify Options 中把 Program arguments 勾选上  
   ![img.png](asset/img.png)
+
+## zookeeper
+[zookeeper-readme](zk/readme.md)
