@@ -21,14 +21,19 @@ import com.example.common.entities.Payment;
 public class OrderController {
 
     @Autowired
-    @Qualifier("restTemplate")
     private RestTemplate restTemplate;
 
     public static final String PAYMENT_SERVER = "http://PAYMENT-PROVIDER/";
+    public static final String STORAGE_SERVER = "http://STORAGE-PROVIDER/";
 
     @GetMapping("/consume/payment/eureka/{id}")
     public CommonResult<Payment> oneByEureka(@PathVariable Long id) {
         return restTemplate.getForObject(PAYMENT_SERVER + "payment/" + id, CommonResult.class);
+    }
+
+    @GetMapping("/consume/storage/eureka/{id}")
+    public CommonResult<Payment> storage(@PathVariable Long id) {
+        return restTemplate.getForObject(STORAGE_SERVER + "storage/" + id, CommonResult.class);
     }
 
 }

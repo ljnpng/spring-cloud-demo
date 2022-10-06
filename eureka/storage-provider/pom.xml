@@ -9,10 +9,9 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>payment-provider</artifactId>
+    <artifactId>storage-provider</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>payment-provider</name>
-    <description>支付模块</description>
+    <name>storage-provider</name>
 
     <dependencies>
         <dependency>

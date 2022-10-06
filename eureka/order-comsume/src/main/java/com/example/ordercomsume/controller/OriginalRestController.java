@@ -12,23 +12,24 @@ import lombok.extern.slf4j.Slf4j;
 import com.example.common.entities.CommonResult;
 import com.example.common.entities.Payment;
 
-
 /**
- * TODO
+ * 不通过注册中心，直接通过rest调用指定服务
  */
 @RestController
 @Slf4j
-public class OrderController {
+public class OriginalRestController {
+
+    public static final String PAYMENT_URL = "http://localhost:8001/";
 
     @Autowired
-    @Qualifier("restTemplate")
-    private RestTemplate restTemplate;
+    @Qualifier("restOriginalTemplate")
+    private RestTemplate restOriginalTemplate;
 
-    public static final String PAYMENT_SERVER = "http://PAYMENT-PROVIDER/";
-
-    @GetMapping("/consume/payment/eureka/{id}")
-    public CommonResult<Payment> oneByEureka(@PathVariable Long id) {
-        return restTemplate.getForObject(PAYMENT_SERVER + "payment/" + id, CommonResult.class);
+    @GetMapping("/consume/{id}")
+    public CommonResult<Payment> id(@PathVariable Long id) {
+        log.warn("配置完负载均衡之后这个resttemplate已经不能能够识别localhost了");
+        return restOriginalTemplate.getForObject(PAYMENT_URL + "payment/" + id, CommonResult.class);
     }
+
 
 }

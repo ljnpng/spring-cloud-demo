@@ -1,6 +1,4 @@
-package com.example.paymentprovider.controller;
-
-import java.util.concurrent.TimeUnit;
+package com.example.storage.provider.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,25 +15,15 @@ import com.example.common.entities.Payment;
  */
 @RestController
 @Slf4j
-public class PaymentController {
+public class StorageController {
 
     @Value("${server.port}")
     private String port;
 
-    @GetMapping("/payment/{id}")
+    @GetMapping("/storage/{id}")
     public CommonResult<Payment> one(@PathVariable Long id) {
-        log.info("获取payment模块 端口: {}", port);
+        log.info("获取storage模块 端口: {}", port);
         return new CommonResult<>(200, "获取成功", new Payment(id, port));
-    }
-
-    @GetMapping("/payment/feign/timeout")
-    public String feignTimeOut() {
-        try {
-            TimeUnit.SECONDS.sleep(3);
-        } catch (InterruptedException e) {
-            log.error(e.getMessage(), e);
-        }
-        return port;
     }
 
 }
