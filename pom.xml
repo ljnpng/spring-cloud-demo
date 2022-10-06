@@ -34,6 +34,16 @@
         <spring-cloud.version>Hoxton.SR8</spring-cloud.version>
     </properties>
 
+    <dependencies>
+
+        <!--工具类，先加上-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
